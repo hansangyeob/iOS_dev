@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by Sang Yeob Han  on 21/07/2022.
+//  Created by Sang Yeob Han  on 21/07/2022. xxx
 //
 
 import SwiftUI
@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            List(coffeeLists, id:\. ){ CoffeeList in
+            List(coffeeLists, id:\.id){ CoffeeList in
             
                 NavigationLink(
                     destination: CoffeeCard(coffee:CoffeeList),label:{
@@ -23,7 +23,7 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 150, height: 100)
-                                .cornerRadius(5)
+                                .cornerRadius(10)
                                 .padding(.vertical,5)
                             
                             VStack{
