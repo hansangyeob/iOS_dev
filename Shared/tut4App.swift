@@ -3,8 +3,7 @@
 //  Shared
 //
 //  Created by Sang Yeob Han  on 21/07/2022.
-//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
-
+//asdasd
 import SwiftUI
 
 @main
