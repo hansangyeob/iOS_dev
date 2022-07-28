@@ -37,7 +37,6 @@ func decodeJsonFromJsonFile(jsonFileName:String) ->[CoffeeStruct]{
 
 
 var decodedCoffeeList = decodeJsonFromJsonFile(jsonFileName: CoffeeListJsonFileName)
-//print(decodedCoffeeList[1])
 
 struct JSONManager: View {
     var body: some View {
