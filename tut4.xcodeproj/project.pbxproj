@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB32A200288924CA0081C227 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1FF288924CA0081C227 /* Tests_iOS.swift */; };
-		BB32A202288924CA0081C227 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A201288924CA0081C227 /* Tests_iOSLaunchTests.swift */; };
-		BB32A20C288924CA0081C227 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A20B288924CA0081C227 /* Tests_macOS.swift */; };
-		BB32A20E288924CA0081C227 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A20D288924CA0081C227 /* Tests_macOSLaunchTests.swift */; };
+		BB0D956528926031000B9010 /* CoffeeListJSON.JSON in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956428926031000B9010 /* CoffeeListJSON.JSON */; };
+		BB0D956628926031000B9010 /* CoffeeListJSON.JSON in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956428926031000B9010 /* CoffeeListJSON.JSON */; };
+		BB0D956828926130000B9010 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956728926130000B9010 /* JSONManager.swift */; };
+		BB0D956928926130000B9010 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956728926130000B9010 /* JSONManager.swift */; };
 		BB32A20F288924CA0081C227 /* tut4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E7288924C90081C227 /* tut4App.swift */; };
 		BB32A210288924CA0081C227 /* tut4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E7288924C90081C227 /* tut4App.swift */; };
 		BB32A211288924CA0081C227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E8288924C90081C227 /* ContentView.swift */; };
@@ -41,18 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB0D956428926031000B9010 /* CoffeeListJSON.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeListJSON.JSON; sourceTree = "<group>"; };
+		BB0D956728926130000B9010 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		BB32A1E7288924C90081C227 /* tut4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tut4App.swift; sourceTree = "<group>"; };
 		BB32A1E8288924C90081C227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB32A1E9288924CA0081C227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB32A1EE288924CA0081C227 /* tut4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tut4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB32A1F4288924CA0081C227 /* tut4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tut4.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB32A1F6288924CA0081C227 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		BB32A1FB288924CA0081C227 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB32A1FF288924CA0081C227 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		BB32A201288924CA0081C227 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		BB32A207288924CA0081C227 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB32A20B288924CA0081C227 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		BB32A20D288924CA0081C227 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		BB32A223288925470081C227 /* CoffeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeList.swift; sourceTree = "<group>"; };
 		BB32A226288927770081C227 /* CoffeeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,9 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				BB32A1E6288924C90081C227 /* Shared */,
-				BB32A1F5288924CA0081C227 /* macOS */,
-				BB32A1FE288924CA0081C227 /* Tests iOS */,
-				BB32A20A288924CA0081C227 /* Tests macOS */,
 				BB32A1EF288924CA0081C227 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +102,8 @@
 				BB32A1E9288924CA0081C227 /* Assets.xcassets */,
 				BB32A223288925470081C227 /* CoffeList.swift */,
 				BB32A226288927770081C227 /* CoffeeCard.swift */,
+				BB0D956428926031000B9010 /* CoffeeListJSON.JSON */,
+				BB0D956728926130000B9010 /* JSONManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -121,32 +117,6 @@
 				BB32A207288924CA0081C227 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BB32A1F5288924CA0081C227 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				BB32A1F6288924CA0081C227 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
-		BB32A1FE288924CA0081C227 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				BB32A1FF288924CA0081C227 /* Tests_iOS.swift */,
-				BB32A201288924CA0081C227 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		BB32A20A288924CA0081C227 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				BB32A20B288924CA0081C227 /* Tests_macOS.swift */,
-				BB32A20D288924CA0081C227 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB32A211288924CA0081C227 /* ContentView.swift in Sources */,
+				BB0D956828926130000B9010 /* JSONManager.swift in Sources */,
+				BB0D956528926031000B9010 /* CoffeeListJSON.JSON in Sources */,
 				BB32A227288927770081C227 /* CoffeeCard.swift in Sources */,
 				BB32A20F288924CA0081C227 /* tut4App.swift in Sources */,
 				BB32A224288925470081C227 /* CoffeList.swift in Sources */,
@@ -319,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB32A212288924CA0081C227 /* ContentView.swift in Sources */,
+				BB0D956928926130000B9010 /* JSONManager.swift in Sources */,
+				BB0D956628926031000B9010 /* CoffeeListJSON.JSON in Sources */,
 				BB32A228288927770081C227 /* CoffeeCard.swift in Sources */,
 				BB32A210288924CA0081C227 /* tut4App.swift in Sources */,
 				BB32A225288925470081C227 /* CoffeList.swift in Sources */,
@@ -329,8 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB32A202288924CA0081C227 /* Tests_iOSLaunchTests.swift in Sources */,
-				BB32A200288924CA0081C227 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,8 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB32A20E288924CA0081C227 /* Tests_macOSLaunchTests.swift in Sources */,
-				BB32A20C288924CA0081C227 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
