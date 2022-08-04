@@ -8,35 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    var coffeeLists:[CoffeeList] = Coffee.topTen
+    var CoffeeShopBrands: [CoffeeShopBrand] = CoffeeShopBrand.allCoffeeBrand
     
     var body: some View {
         NavigationView{
-            List(coffeeLists, id:\.id){ CoffeeList in
-            
-                NavigationLink(
-                    destination: CoffeeCard(coffee:CoffeeList),label:{
-                        HStack{
-                        
-                            Image(CoffeeList.imageName)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 100)
-                                .cornerRadius(10)
-                                .padding(.vertical,5)
-                            
-                            VStack{
-                                Text(CoffeeList.title)
-                                    .fontWeight(.semibold)
-                                Text(CoffeeList.uploadedDate)
-                                    .font(.subheadline)
-                                    .foregroundColor(.secondary)
-                            }
-                        }
-                    }
-                    )}
+            List{
+                ForEach(CoffeeShopBrands, id: \.founderYear ){
+                    CoffeeShopBrand in
+                    Text("\(CoffeeShopBrand.founderYear)")
+                }
             }
+        }
         }
 }
 
@@ -46,5 +28,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
 
 

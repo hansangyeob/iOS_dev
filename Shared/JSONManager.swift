@@ -3,59 +3,40 @@
 //  tut4
 //
 //  Created by Sang Yeob Han  on 28/07/2022.
+//https://app.quicktype.io
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
+//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
 
 import Foundation
 
-import SwiftUI
 
-var CoffeeListJsonFileName = "CoffeeListJSON.json"
+struct CoffeeShopBrand: Codable {
 
-struct CoffeeStruct: Codable{
-    var imageName :String
-    var title: String
-    var description: String
-    var updatedDate: String
+    let logoImage, brandTitle, welcomeDescription, founderYear, owner: String
+
+    static let allCoffeeBrand :[CoffeeShopBrand] = Bundle.main.decode(file:"shops.json")
+    static let sampleCoffeeBrand : CoffeeShopBrand = allCoffeeBrand[0]
 }
 
-func decodeJsonFromJsonFile(jsonFileName:String) ->[CoffeeStruct]{
-    if let file = Bundle.main.url(forResource:jsonFileName,withExtension:nil){
-        if let data = try? Data(contentsOf: file){
-            do{
-                let decoder = JSONDecoder()
-                let decoded = try decoder.decode([CoffeeStruct].self,from:data)
-                return decoded
-            }catch let error{
-                fatalError("Failed to decode JSON:\(error)")
-            }
+
+extension Bundle{
+    func decode<T: Decodable>(file: String) -> T {
+        guard let url = self.url(forResource: file, withExtension: nil) else {
+            fatalError("Could not find \(file) in the project.")
         }
-    }else{
-        fatalError("Failed to decode \(jsonFileName) file. ")
-    }
-    return [] as [CoffeeStruct]
-}
-
-
-var decodedCoffeeList = decodeJsonFromJsonFile(jsonFileName: CoffeeListJsonFileName)
-
-struct JSONManager: View {
-    var body: some View {
-        Button("button"){
-            
+        
+        guard let data = try? Data(contentsOf: url) else{
+            fatalError("Could not load \(file) in the project.")
         }
+        
+        let decoder = JSONDecoder()
+        
+        guard let loadedData = try? decoder.decode(T.self,from:data) else{
+            fatalError("Could not decode \(file) in the project.")
+        }
+
+        return loadedData;
     }
 }
-
-struct JSONManager_Previews: PreviewProvider {
-    static var previews: some View {
-        JSONManager()
-    }
-}
-
-
-
-
-//"imageName": "americano",
-// "title": "Americano",
-// "description": "Caffè Americano is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee. Its strength varies with the number of shots of espresso and amount of water added.",
-// "uploadedDate": "Jan 1,2021"
