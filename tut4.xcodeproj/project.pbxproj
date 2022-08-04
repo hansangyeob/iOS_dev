@@ -7,20 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BB0D956528926031000B9010 /* CoffeeListJSON.JSON in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956428926031000B9010 /* CoffeeListJSON.JSON */; };
-		BB0D956628926031000B9010 /* CoffeeListJSON.JSON in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956428926031000B9010 /* CoffeeListJSON.JSON */; };
 		BB0D956828926130000B9010 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956728926130000B9010 /* JSONManager.swift */; };
 		BB0D956928926130000B9010 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D956728926130000B9010 /* JSONManager.swift */; };
+		BB22B34C289BB72C00C97697 /* ShopData.json in Sources */ = {isa = PBXBuildFile; fileRef = BB22B34B289BB72C00C97697 /* ShopData.json */; };
 		BB32A20F288924CA0081C227 /* tut4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E7288924C90081C227 /* tut4App.swift */; };
 		BB32A210288924CA0081C227 /* tut4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E7288924C90081C227 /* tut4App.swift */; };
 		BB32A211288924CA0081C227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E8288924C90081C227 /* ContentView.swift */; };
 		BB32A212288924CA0081C227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A1E8288924C90081C227 /* ContentView.swift */; };
 		BB32A213288924CA0081C227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB32A1E9288924CA0081C227 /* Assets.xcassets */; };
 		BB32A214288924CA0081C227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB32A1E9288924CA0081C227 /* Assets.xcassets */; };
-		BB32A224288925470081C227 /* CoffeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A223288925470081C227 /* CoffeList.swift */; };
-		BB32A225288925470081C227 /* CoffeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A223288925470081C227 /* CoffeList.swift */; };
-		BB32A227288927770081C227 /* CoffeeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A226288927770081C227 /* CoffeeCard.swift */; };
-		BB32A228288927770081C227 /* CoffeeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB32A226288927770081C227 /* CoffeeCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB0D956428926031000B9010 /* CoffeeListJSON.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CoffeeListJSON.JSON; sourceTree = "<group>"; };
 		BB0D956728926130000B9010 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		BB22B34B289BB72C00C97697 /* ShopData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ShopData.json; sourceTree = "<group>"; };
+		BB22B34D289BC4AE00C97697 /* shops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shops.json; sourceTree = "<group>"; };
 		BB32A1E7288924C90081C227 /* tut4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tut4App.swift; sourceTree = "<group>"; };
 		BB32A1E8288924C90081C227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB32A1E9288924CA0081C227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,8 +46,6 @@
 		BB32A1F4288924CA0081C227 /* tut4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tut4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB32A1FB288924CA0081C227 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB32A207288924CA0081C227 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB32A223288925470081C227 /* CoffeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeList.swift; sourceTree = "<group>"; };
-		BB32A226288927770081C227 /* CoffeeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +94,9 @@
 				BB32A1E7288924C90081C227 /* tut4App.swift */,
 				BB32A1E8288924C90081C227 /* ContentView.swift */,
 				BB32A1E9288924CA0081C227 /* Assets.xcassets */,
-				BB32A223288925470081C227 /* CoffeList.swift */,
-				BB32A226288927770081C227 /* CoffeeCard.swift */,
-				BB0D956428926031000B9010 /* CoffeeListJSON.JSON */,
 				BB0D956728926130000B9010 /* JSONManager.swift */,
+				BB22B34B289BB72C00C97697 /* ShopData.json */,
+				BB22B34D289BC4AE00C97697 /* shops.json */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -277,12 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB22B34C289BB72C00C97697 /* ShopData.json in Sources */,
 				BB32A211288924CA0081C227 /* ContentView.swift in Sources */,
 				BB0D956828926130000B9010 /* JSONManager.swift in Sources */,
-				BB0D956528926031000B9010 /* CoffeeListJSON.JSON in Sources */,
-				BB32A227288927770081C227 /* CoffeeCard.swift in Sources */,
 				BB32A20F288924CA0081C227 /* tut4App.swift in Sources */,
-				BB32A224288925470081C227 /* CoffeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +283,7 @@
 			files = (
 				BB32A212288924CA0081C227 /* ContentView.swift in Sources */,
 				BB0D956928926130000B9010 /* JSONManager.swift in Sources */,
-				BB0D956628926031000B9010 /* CoffeeListJSON.JSON in Sources */,
-				BB32A228288927770081C227 /* CoffeeCard.swift in Sources */,
 				BB32A210288924CA0081C227 /* tut4App.swift in Sources */,
-				BB32A225288925470081C227 /* CoffeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
