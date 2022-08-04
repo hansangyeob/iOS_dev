@@ -14,9 +14,10 @@ import Foundation
 
 struct CoffeeShopBrand: Codable {
 
-    let logoImage, brandTitle, welcomeDescription, founderYear, owner: String
-
-    static let allCoffeeBrand :[CoffeeShopBrand] = Bundle.main.decode(file:"shops.json")
+    let logoImage, brandTitle, description, founderYear: String
+    let owner: String
+    
+    static let allCoffeeBrand :[CoffeeShopBrand] = Bundle.main.decode(file:"ShopData.json")
     static let sampleCoffeeBrand : CoffeeShopBrand = allCoffeeBrand[0]
 }
 
